@@ -2,51 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="335dd5ed-88ff-40f8-916e-4c398f60b629" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Componenents/UI/DropdownMenu/Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componenents/UI/DropdownMenu/Dropdown.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Componenents/UI/FormInput/FormInpu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componenents/UI/FormInput/FormInpu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="225">
-                    <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-                    <folding>
-                      <element signature="e#0#47#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/Componenents/UI/FormInput/FormInpu.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="333">
-                    <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
-                    <folding>
-                      <element signature="e#0#59#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1219195406">
@@ -58,22 +23,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="9" />
+          <entry key="js" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="9" />
+          <entry key="JavaScript" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="624" />
+          <entry key="js" value="2174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="624" />
+          <entry key="JavaScript" value="2174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -85,7 +50,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.30912596">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
@@ -100,11 +65,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Componenents/UI/FormInput/FormInpu.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="55" column="18" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="18" />
+                <state relative-caret-position="135">
+                  <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
                   <folding>
                     <element signature="e#0#59#0" expanded="true" />
                   </folding>
@@ -112,7 +77,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Containers/App.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="243">
@@ -128,7 +93,7 @@
             <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="594">
-                  <caret line="23" column="72" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
+                  <caret line="67" column="107" selection-start-line="67" selection-start-column="107" selection-end-line="67" selection-end-column="107" />
                   <folding>
                     <element signature="e#0#47#0" expanded="true" />
                   </folding>
@@ -143,10 +108,22 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="369">
-                  <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+                <state relative-caret-position="252">
+                  <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#47#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="16" column="104" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
+                  <folding>
+                    <element signature="e#0#53#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -163,9 +140,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Componenents/UI/DropdownMenu/Dropdown.js" />
-        <option value="$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js" />
         <option value="$PROJECT_DIR$/src/Containers/App.js" />
         <option value="$PROJECT_DIR$/src/Componenents/UI/FormInput/FormInpu.js" />
+        <option value="$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.js" />
+        <option value="$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js" />
       </list>
     </option>
   </component>
@@ -233,23 +211,8 @@
               <item name="coursereviews" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Componenents" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="coursereviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="coursereviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Componenents" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="DropdownMenu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="coursereviews" type="b2602c69:ProjectViewProjectNode" />
-              <item name="coursereviews" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Componenents" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
-              <item name="FormInput" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+              <item name="CourseReview" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="coursereviews" type="b2602c69:ProjectViewProjectNode" />
@@ -295,12 +258,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537198017974</updated>
-      <workItem from="1537198021232" duration="1666000" />
+      <workItem from="1537198021232" duration="4025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1666000" />
+    <option name="totallyTimeSpent" value="4025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1612" height="872" extended-state="6" />
@@ -310,7 +273,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Get Gist" />
+      <window_info anchor="bottom" id="Get Gist" weight="0.32921812" />
       <window_info anchor="bottom" id="Version Control" weight="0.32921812" />
       <window_info anchor="bottom" id="Tail" />
       <window_info anchor="bottom" id="Quokka" />
@@ -371,22 +334,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js">
+    <entry file="file://$PROJECT_DIR$/src/Componenents/UI/FormInput/FormInpu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="135">
+          <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Componenents/UI/FormInput/FormInpu.js">
+    <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        <state relative-caret-position="432">
+          <caret line="16" column="104" selection-start-line="16" selection-start-column="104" selection-end-line="16" selection-end-column="104" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>

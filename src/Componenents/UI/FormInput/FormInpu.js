@@ -10,10 +10,10 @@ const FormInput = props => {
                                 value,
                                 id,
                                 placeHolder,
-                                changeHandler,
                                 options = [],
-                                classes
-                            }) => {
+                                classes,
+        other
+                            }, changeHandeler) => {
         classes = classes || [];
 
         switch (type) {
@@ -26,7 +26,7 @@ const FormInput = props => {
                         label={label}
                         className={classes.join(' ')}
                         value={value}
-                        onChange={(event) => changeHandler(event, id)}
+                        onChange={(event) => changeHandeler(event, id,other)}
                     >
                         {options.map(option => <MenuItem key={option} value={option}>
                             {option}
@@ -47,17 +47,17 @@ const FormInput = props => {
                     placeholder={placeHolder}
                     className={classes.join(' ')}
                     value={value}
-                    onChange={(event) => changeHandler(event, id)}
+                    onChange={(event) => changeHandeler(event, id,other)}
                     margin="normal"
                 />)
 
         }
     }
-    const {payload, changeHandeler} = props;
+    const {payload, changeHandler} = props;
 
     return (
         <Fragment>
-            {formcontroller(payload )}
+            {formcontroller(payload, changeHandler)}
         </Fragment>
     )
 }
