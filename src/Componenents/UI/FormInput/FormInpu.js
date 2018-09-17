@@ -9,11 +9,13 @@ const FormInput = props => {
                                 multiline = false,
                                 value,
                                 id,
-                                multiline,
                                 placeHolder,
                                 changeHandler,
-                                options = []
+                                options = [],
+                                classes
                             }) => {
+        classes = classes || [];
+
         switch (type) {
             case 'select':
                 return (
@@ -45,17 +47,17 @@ const FormInput = props => {
                     placeholder={placeHolder}
                     className={classes.join(' ')}
                     value={value}
-                    onChange={(event) => changeHandler(event, id, other)}
+                    onChange={(event) => changeHandler(event, id)}
                     margin="normal"
                 />)
 
         }
     }
-
+    const {payload, changeHandeler} = props;
 
     return (
         <Fragment>
-            {formcontroller()}
+            {formcontroller(payload )}
         </Fragment>
     )
 }
