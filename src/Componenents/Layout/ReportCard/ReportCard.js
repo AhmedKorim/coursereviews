@@ -66,6 +66,11 @@ class ReportCard extends React.Component {
         e.preventDefault();
     }
 
+    // remvoe review
+    removeReview = (id) => {
+        this.setState({coursesReviews: this.state.coursesReviews.filter(courseReview => courseReview.id !== id)})
+    }
+
 
     render() {
         const {
@@ -74,7 +79,7 @@ class ReportCard extends React.Component {
             },
             metaDataChange,
             coursesReviewsHandler,
-            addMoveReviews,
+            removeReview,
             submitReviews,
         }
             = this;
@@ -93,7 +98,7 @@ class ReportCard extends React.Component {
                         </div>
                         <div className="reportBody">
                             {coursesReviews.map(({id, controllers}) => <CourseReview key={id}
-                                                                                     addMoveReviews={addMoveReviews}
+                                                                                     remove={removeReview}
                                                                                      changeHandler={coursesReviewsHandler} review={controllers}
                                                                                      ide={id}/>)}
                         </div>

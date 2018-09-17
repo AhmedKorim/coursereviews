@@ -18,7 +18,7 @@ const styles = theme => ({
 })
 
 const CourseReview = props => {
-    const {review, changeHandler, ide, addMoveReviews, classes} = props;
+    const {review, changeHandler, ide, remove, classes} = props;
     return (
         <div className="courseReview">
             <Slide in={!!review} unmountOnExit mountOnEnter>
@@ -33,8 +33,8 @@ const CourseReview = props => {
                             </Grid>
                             <Grid xs item container justify="center" alignItems="center">
                                 <Grid>
-                                    <Tooltip title="add new course review">
-                                        <Button variant="fab" color="primary" className="newReviewFap" onClick={addMoveReviews}><Icon>add</Icon></Button>
+                                    <Tooltip title="remove course review">
+                                        <Button variant="fab" color="secondary" className="newReviewFap" onClick={_ => remove(ide)}><Icon>delete</Icon></Button>
                                     </Tooltip>
                                 </Grid>
                             </Grid>

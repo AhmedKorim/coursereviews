@@ -1,4 +1,27 @@
 .reviewCard {
+  >*{
+    box-sizing: border-box;
+  }
+  height: 100%;
+  max-height: 100%;
+  > div {
+    height: 100%;
+
+    > form {
+      height: 100%;
+
+    }
+  }
+  .reportMetaData{
+    width: 100%;
+    padding: 0 .4rem;
+  }
+  .reportBody {
+    height: 80%;
+    width: 100%;
+    padding: 0 .4rem;
+    overflow: auto;
+  }
   .fullWidth {
     width: 95%;
     margin: auto;
@@ -6,7 +29,7 @@
   .formAction {
     text-align: center;
     padding: .6rem 0 0 0;
-    .submitFab{
+    .submitFab {
       width: 100px;
     }
   }
