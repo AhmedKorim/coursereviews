@@ -64,6 +64,15 @@ class ReportCard extends React.Component {
     //submit reviews
     submitReviews = (e) => {
         e.preventDefault();
+        this.props.load();
+        this.props.toggleSnakeBar();
+
+        setTimeout(() => {
+                this.props.load();
+                this.setState({coursesReviews: []});
+                this.props.toggleSnakeBar();
+            }
+            , 3000)
     }
 
     // remvoe review

@@ -7,8 +7,15 @@ import Tooltip from "@material-ui/core/Tooltip/Tooltip";
 import React, {Component, Fragment} from 'react';
 import './App.scss';
 import ReportCard from "../Componenents/Layout/ReportCard/ReportCard";
+import SnackBar from "../Componenents/UI/snakebar/Snackbar";
+import Spinner from "../Componenents/UI/Spinner/Spinner";
 
 class App extends Component {
+    state = {
+        load: false,
+        snackbar: false
+    }
+
     componentDidMount() {
         if (!this.header) return;
         this.headerHeight = window.getComputedStyle(this.header).height;
@@ -17,6 +24,14 @@ class App extends Component {
     addMore = () => {
         if (!this.reportCard) return;
         this.reportCard.addMoveReviews();
+    }
+    load = () => {
+        this.setState(prevState => ({load: !prevState.load}))
+    }
+
+    toggleSnakeBar = () => {
+        clearTimeout(this.timeout);
+        this.setState(prevState => ({snackbar: !prevState.snackbar}));
     }
 
 
@@ -31,13 +46,17 @@ class App extends Component {
                     </AppBar>
                 </RootRef>
                 <main style={{height: `calc(100vh - ${this.headerHeight ? this.headerHeight : 120}px)`}}>
-                    <ReportCard ref={(com) => this.reportCard = com}/>
+                    <ReportCard
+                        toggleSnakeBar={this.toggleSnakeBar}
+                        load={this.load} ref={(com) => this.reportCard = com}/>
                 </main>
                 <div className="FloatActionButtonWrapper">
                     <Tooltip title="add new course review">
                         <Button variant="fab" color="primary" onClick={this.addMore} className="newReviewFap"><Icon>add</Icon></Button>
                     </Tooltip>
                 </div>
+                {this.state.load && <Spinner/>}
+                <SnackBar open={this.state.snackbar}/>
             </Fragment>
         );
     }
