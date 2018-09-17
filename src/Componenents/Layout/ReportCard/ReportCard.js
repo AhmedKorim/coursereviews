@@ -4,13 +4,14 @@ import React from 'react';
 import FormInput from "../../UI/FormInput/FormInpu";
 import CourseReview from "../CourseReview/CourseReview";
 import './ReportCard.scss';
+
 const courses = ['course1', 'course2', 'course3', 'course4'];
 const grades = ['grade1', 'grade2', 'grade3', 'grade4'];
 
 class ReportCard extends React.Component {
     state = {
         reportMeta: [
-            {value: '', label: 'E-mail', id: 'email', type: 'date'},
+            {value: new Date().getDate(), label: 'E-mail', id: 'email', type: 'date'},
             {value: '', label: 'name', id: 'studentName', type: 'text'},
             {value: '', label: 'teacher', id: 'teacherName', type: 'text'},
         ],
@@ -83,8 +84,8 @@ class ReportCard extends React.Component {
                     <form onSubmit={submitReviews}>
                         <div className="reportMetaData">
                             <Grid container>
-                                <Grid item container>
-                                    {reportMeta.map(metaItem => <Grid key={metaItem.id} item xs={12} md>
+                                <Grid item container justify="center">
+                                    {reportMeta.map(metaItem => <Grid key={metaItem.id} item xs={12} sm>
                                         <FormInput payload={{...metaItem}} changeHandler={metaDataChange}/>
                                     </Grid>)}
                                 </Grid>
@@ -96,9 +97,11 @@ class ReportCard extends React.Component {
                                                                                      changeHandler={coursesReviewsHandler} review={controllers}
                                                                                      ide={id}/>)}
                         </div>
-                        <Button type="submit" variant="extendedFab" color="primary">
-                            save
-                        </Button>
+                        <div className="formAction">
+                            <Button type="submit" variant="extendedFab" color="primary" className="submitFab">
+                                save
+                            </Button>
+                        </div>
                     </form>
                 </div>
             </div>

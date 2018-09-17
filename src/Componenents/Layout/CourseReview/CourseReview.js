@@ -13,6 +13,7 @@ const styles = theme => ({
     paper: {
         backgroundColor: theme.palette.background.default,
         borderRadius: 0,
+        padding: '1rem'
     }
 })
 
@@ -21,11 +22,11 @@ const CourseReview = props => {
     return (
         <div className="courseReview">
             <Slide in={!!review} unmountOnExit mountOnEnter>
-                <Paper elevation={1} className={classes.paper}>
+                <Paper elevation={5} className={classes.paper}>
                     <Grid container>
                         <Grid item container>
                             <Grid item xs={12} md={11} container alignItems="center">
-                                {review && review.map(review => <Grid xs={12} md>
+                                {review && review.map(review => <Grid xs={12} sm>
                                     <FormInput payload={{...review, other: ide, classes: review.multiline ? ['fullWidth'] : null}}
                                                changeHandler={changeHandler}/>
                                 </Grid>)}

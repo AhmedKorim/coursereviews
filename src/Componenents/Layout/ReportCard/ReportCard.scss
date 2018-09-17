@@ -1,6 +1,13 @@
-.reviewCard{
-  .fullWidth{
-    width: 80%;
-
+.reviewCard {
+  .fullWidth {
+    width: 95%;
+    margin: auto;
+  }
+  .formAction {
+    text-align: center;
+    padding: .6rem 0 0 0;
+    .submitFab{
+      width: 100px;
+    }
   }
 }
