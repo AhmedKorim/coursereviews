@@ -11,8 +11,7 @@ const FormInput = props => {
                                 id,
                                 placeHolder,
                                 options = [],
-                                classes,
-        other
+                                classes, other
                             }, changeHandeler) => {
         classes = classes || [];
 

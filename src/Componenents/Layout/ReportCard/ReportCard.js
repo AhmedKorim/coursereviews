@@ -1,9 +1,9 @@
 import Button from "@material-ui/core/Button/Button";
 import Grid from "@material-ui/core/Grid/Grid";
 import React from 'react';
-import FormInput from "../UI/FormInput/FormInpu";
-import CourseReview from "./CourseReview/CourseReview";
-
+import FormInput from "../../UI/FormInput/FormInpu";
+import CourseReview from "../CourseReview/CourseReview";
+import './ReportCard.scss';
 const courses = ['course1', 'course2', 'course3', 'course4'];
 const grades = ['grade1', 'grade2', 'grade3', 'grade4'];
 
@@ -60,6 +60,10 @@ class ReportCard extends React.Component {
         }
         this.setState(prevState => ({coursesReviews: prevState.coursesReviews.concat(newReview)}));
     }
+    //submit reviews
+    submitReviews = (e) => {
+        e.preventDefault();
+    }
 
 
     render() {
@@ -69,13 +73,14 @@ class ReportCard extends React.Component {
             },
             metaDataChange,
             coursesReviewsHandler,
-            addMoveReviews
+            addMoveReviews,
+            submitReviews,
         }
             = this;
         return (
             <div className="reviewCard">
                 <div className="container">
-                    <form>
+                    <form onSubmit={submitReviews}>
                         <div className="reportMetaData">
                             <Grid container>
                                 <Grid item container>
