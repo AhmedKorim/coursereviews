@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="335dd5ed-88ff-40f8-916e-4c398f60b629" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Componenents/Layout/ReportCard/ReportCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componenents/Layout/ReportCard/ReportCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Componenents/Layout/ReportCard/ReportCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componenents/Layout/ReportCard/ReportCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/App.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,25 +22,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="js" value="10" />
-          <entry key="scss" value="3" />
+          <entry key="scss" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JavaScript" value="10" />
-          <entry key="SCSS" value="3" />
+          <entry key="SCSS" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="3020" />
-          <entry key="scss" value="201" />
+          <entry key="js" value="3116" />
+          <entry key="scss" value="221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="3020" />
-          <entry key="SCSS" value="201" />
+          <entry key="JavaScript" value="3116" />
+          <entry key="SCSS" value="221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -58,18 +56,6 @@
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Componenents/UI/DropdownMenu/Dropdown.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#0#47#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Componenents/UI/FormInput/FormInpu.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1458">
@@ -84,8 +70,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Containers/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="243">
-                  <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+                <state relative-caret-position="54">
+                  <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard/ReportCard.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="78">
+                  <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#53#0" expanded="true" />
                   </folding>
@@ -94,13 +89,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard/ReportCard.js">
+            <entry file="file://$PROJECT_DIR$/src/Containers/App.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="243">
-                  <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-                  <folding>
-                    <element signature="e#0#53#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="108">
+                  <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -162,7 +154,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Componenents/UI/DropdownMenu/Dropdown.js" />
-        <option value="$PROJECT_DIR$/src/Containers/App.js" />
         <option value="$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js" />
         <option value="$PROJECT_DIR$/src/index.scss" />
         <option value="$PROJECT_DIR$/src/Componenents/UI/FormInput/FormInpu.js" />
@@ -170,6 +161,8 @@
         <option value="$PROJECT_DIR$/src/Componenents/Layout/ReportCard/ReportCard.scss" />
         <option value="$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.js" />
         <option value="$PROJECT_DIR$/src/Componenents/Layout/ReportCard/ReportCard.js" />
+        <option value="$PROJECT_DIR$/src/Containers/App.js" />
+        <option value="$PROJECT_DIR$/src/Containers/App.scss" />
       </list>
     </option>
   </component>
@@ -297,12 +290,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537198017974</updated>
-      <workItem from="1537198021232" duration="6423000" />
+      <workItem from="1537198021232" duration="6588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6423000" />
+    <option name="totallyTimeSpent" value="6588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1612" height="872" extended-state="6" />
@@ -363,16 +356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Containers/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Componenents/UI/FormInput/FormInpu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1458">
@@ -416,11 +399,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard/ReportCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="78">
           <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Containers/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Containers/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
