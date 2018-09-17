@@ -26,7 +26,7 @@ const CourseReview = props => {
                     <Grid container>
                         <Grid item container>
                             <Grid item xs={12} md={11} container alignItems="center">
-                                {review && review.map(review => <Grid xs={12} sm>
+                                {review && review.map(review => <Grid item xs={12} sm>
                                     <FormInput payload={{...review, other: ide, classes: review.multiline ? ['fullWidth'] : null}}
                                                changeHandler={changeHandler}/>
                                 </Grid>)}
