@@ -47,6 +47,19 @@ class ReportCard extends React.Component {
             coursesReviews: updatedReviewsData
         })
     };
+    //addMoveReviews
+    addMoveReviews = () => {
+        const reviewsCount = this.state.coursesReviews;
+        // adding new review
+        const newReview = {
+            id: reviewsCount + 1, controllers: [
+                {value: 'course1', label: 'course', id: 'course', type: 'select', options: courses},
+                {value: 'grade1', label: 'name', id: 'grade', type: 'select', options: grades},
+                {value: '', label: 'teacher', id: 'teacherName', type: 'text', multiline: true}]
+        }
+        this.setState(prevState => ({coursesReviews: prevState.coursesReviews.concat(newReview)}));
+    }
+
 
     render() {
         const {
@@ -54,7 +67,8 @@ class ReportCard extends React.Component {
                 reportMeta, coursesReviews
             },
             metaDataChange,
-            coursesReviewsHandler
+            coursesReviewsHandler,
+            addMoveReviews
         }
             = this;
         return (
@@ -71,7 +85,9 @@ class ReportCard extends React.Component {
                             </Grid>
                         </div>
                         <div className="reportBody">
-                            {coursesReviews.map(({id, controllers}) => <CourseReview key={id} changeHandler={coursesReviewsHandler} review={controllers}
+                            {coursesReviews.map(({id, controllers}) => <CourseReview key={id}
+                                                                                     addMoveReviews={addMoveReviews}
+                                                                                     changeHandler={coursesReviewsHandler} review={controllers}
                                                                                      ide={id}/>)}
                         </div>
                     </form>

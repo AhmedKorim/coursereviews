@@ -6,7 +6,7 @@ import React from 'react'
 import FormInput from "../../UI/FormInput/FormInpu";
 
 const CourseReview = props => {
-    const {review, changeHandler, ide} = props;
+    const {review, changeHandler, ide,addMoveReviews} = props;
     return (
         <div>
             <Paper elevation={1}>
@@ -18,7 +18,7 @@ const CourseReview = props => {
                             </Grid>)}
                         </Grid>
                         <Grid>
-                            <Button variant="fab" color="primary"><Icon>add</Icon></Button>
+                            <Button variant="fab" color="primary" onClick={addMoveReviews}><Icon>add</Icon></Button>
                         </Grid>
                     </Grid>
                 </Grid>
