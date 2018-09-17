@@ -1,3 +1,4 @@
+import Button from "@material-ui/core/Button/Button";
 import Grid from "@material-ui/core/Grid/Grid";
 import React from 'react';
 import FormInput from "../UI/FormInput/FormInpu";
@@ -90,6 +91,9 @@ class ReportCard extends React.Component {
                                                                                      changeHandler={coursesReviewsHandler} review={controllers}
                                                                                      ide={id}/>)}
                         </div>
+                        <Button type="submit" variant="extendedFab" color="primary">
+                            save
+                        </Button>
                     </form>
                 </div>
             </div>

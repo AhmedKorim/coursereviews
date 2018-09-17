@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="335dd5ed-88ff-40f8-916e-4c398f60b629" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componenents/Layout/CourseReview/CourseReview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +30,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2383" />
+          <entry key="js" value="2423" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="2383" />
+          <entry key="JavaScript" value="2423" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -91,7 +90,7 @@
             <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="594">
-                  <caret line="81" column="107" selection-start-line="81" selection-start-column="107" selection-end-line="81" selection-end-column="107" />
+                  <caret line="82" column="107" selection-start-line="82" selection-start-column="107" selection-end-line="82" selection-end-column="107" />
                   <folding>
                     <element signature="e#0#47#0" expanded="true" />
                   </folding>
@@ -106,10 +105,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
+                <state relative-caret-position="217">
+                  <caret line="93" column="82" selection-start-line="93" selection-start-column="82" selection-end-line="93" selection-end-column="82" />
                   <folding>
-                    <element signature="e#0#47#0" expanded="true" />
+                    <element signature="e#0#53#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -256,12 +255,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537198017974</updated>
-      <workItem from="1537198021232" duration="4315000" />
+      <workItem from="1537198021232" duration="4404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4315000" />
+    <option name="totallyTimeSpent" value="4404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1612" height="872" extended-state="6" />
@@ -354,10 +353,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Componenents/Layout/ReportCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
+        <state relative-caret-position="217">
+          <caret line="93" column="82" selection-start-line="93" selection-start-column="82" selection-end-line="93" selection-end-column="82" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
