@@ -43,7 +43,8 @@ class ReportCard extends React.Component {
             if (review.id !== key) return review;
             const newController = review.controllers
                 .map(controller => controller.id !== id ? controller : {...controller, value});
-            return {id: key, controllers: newController}
+            console.log(key, review.id);
+            return {id: review.id, controllers: newController}
         })
         this.setState({
             coursesReviews: updatedReviewsData
@@ -54,7 +55,7 @@ class ReportCard extends React.Component {
         const reviewsCount = this.state.coursesReviews;
         // adding new review
         const newReview = {
-            id: reviewsCount + new Date().getDate(), controllers: [
+            id: reviewsCount + new Date().getTime(), controllers: [
                 {value: 'course1', label: 'course', id: 'course', type: 'select', options: courses},
                 {value: 'grade1', label: 'grade', id: 'grade', type: 'select', options: grades},
                 {value: '', label: 'comment', id: 'teacherName', type: 'text', multiline: true}]
