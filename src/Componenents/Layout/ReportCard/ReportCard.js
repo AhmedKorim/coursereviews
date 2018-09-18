@@ -11,16 +11,16 @@ const grades = ['grade1', 'grade2', 'grade3', 'grade4'];
 class ReportCard extends React.Component {
     state = {
         reportMeta: [
-            {value: new Date().getDate(), label: 'E-mail', id: 'email', type: 'date'},
+            {value: new Date().getDate(), label: 'date', id: 'email', type: 'date'},
             {value: '', label: 'name', id: 'studentName', type: 'text'},
             {value: '', label: 'teacher', id: 'teacherName', type: 'text'},
         ],
         coursesReviews: [
             {
                 id: 1, controllers: [
-                    {value: 'course1', label: 'course', id: 'course', type: 'select', options: courses},
-                    {value: 'grade1', label: 'name', id: 'grade', type: 'select', options: grades},
-                    {value: '', label: 'teacher', id: 'teacherName', type: 'text', multiline: true}]
+                    {value: 'course1', label: 'course', id: 'class', type: 'select', options: courses},
+                    {value: 'grade1', label: 'Grade', id: 'grade', type: 'select', options: grades},
+                    {value: '', label: 'comment', id: 'comment', type: 'text', multiline: true}]
             }
         ]
     }
@@ -54,10 +54,10 @@ class ReportCard extends React.Component {
         const reviewsCount = this.state.coursesReviews;
         // adding new review
         const newReview = {
-            id: reviewsCount + 1, controllers: [
+            id: reviewsCount + new Date().getDate(), controllers: [
                 {value: 'course1', label: 'course', id: 'course', type: 'select', options: courses},
-                {value: 'grade1', label: 'name', id: 'grade', type: 'select', options: grades},
-                {value: '', label: 'teacher', id: 'teacherName', type: 'text', multiline: true}]
+                {value: 'grade1', label: 'grade', id: 'grade', type: 'select', options: grades},
+                {value: '', label: 'comment', id: 'teacherName', type: 'text', multiline: true}]
         }
         this.setState(prevState => ({coursesReviews: prevState.coursesReviews.concat(newReview)}));
     }

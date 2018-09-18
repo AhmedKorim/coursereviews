@@ -5,10 +5,10 @@ import RootRef from "@material-ui/core/RootRef/RootRef";
 import Toolbar from "@material-ui/core/Toolbar/Toolbar";
 import Tooltip from "@material-ui/core/Tooltip/Tooltip";
 import React, {Component, Fragment} from 'react';
-import './App.scss';
 import ReportCard from "../Componenents/Layout/ReportCard/ReportCard";
 import SnackBar from "../Componenents/UI/snakebar/Snackbar";
 import Spinner from "../Componenents/UI/Spinner/Spinner";
+import './App.scss';
 
 class App extends Component {
     state = {

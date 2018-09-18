@@ -1,9 +1,9 @@
 import {withStyles} from "@material-ui/core";
 import Button from "@material-ui/core/Button/Button";
 import Grid from "@material-ui/core/Grid/Grid";
+import Grow from "@material-ui/core/Grow/Grow";
 import Icon from "@material-ui/core/Icon/Icon";
 import Paper from "@material-ui/core/Paper/Paper";
-import Slide from "@material-ui/core/Slide/Slide";
 import Tooltip from "@material-ui/core/Tooltip/Tooltip";
 import React from 'react'
 import FormInput from "../../UI/FormInput/FormInpu";
@@ -21,7 +21,7 @@ const CourseReview = props => {
     const {review, changeHandler, ide, remove, classes} = props;
     return (
         <div className="courseReview">
-            <Slide in={!!review} unmountOnExit mountOnEnter>
+            <Grow in={!!review} unmountOnExit mountOnEnter>
                 <Paper elevation={5} className={classes.paper}>
                     <Grid container>
                         <Grid item container>
@@ -41,7 +41,7 @@ const CourseReview = props => {
                         </Grid>
                     </Grid>
                 </Paper>
-            </Slide>
+            </Grow>
         </div>
     )
 }
