@@ -5,24 +5,39 @@ import FormInput from "../../UI/FormInput/FormInpu";
 import CourseReview from "../CourseReview/CourseReview";
 import './ReportCard.scss';
 
-const courses = ['course1', 'course2', 'course3', 'course4'];
-const grades = ['grade1', 'grade2', 'grade3', 'grade4'];
+
+const courses = ['الدرس1', 'الدرس2', 'الدرس3', 'الدرس4'];
+const grades = ['الدرس1', 'الدرس2', 'الدرس3', 'الدرس4'];
+const gradesEN = ['degree1', 'degree2', 'degree3', 'degree4'];
+const coursesen = ['course1', 'course2', 'course3', 'course4'];
 
 class ReportCard extends React.Component {
-    state = {
-        reportMeta: [
-            {value: new Date().getDate(), label: 'date', id: 'email', type: 'date'},
-            {value: '', label: 'name', id: 'studentName', type: 'text'},
-            {value: '', label: 'teacher', id: 'teacherName', type: 'text'},
-        ],
-        coursesReviews: [
-            {
-                id: 1, controllers: [
-                    {value: 'course1', label: 'course', id: 'class', type: 'select', options: courses},
-                    {value: 'grade1', label: 'Grade', id: 'grade', type: 'select', options: grades},
-                    {value: '', label: 'comment', id: 'comment', type: 'text', multiline: true}]
-            }
-        ]
+
+    constructor(props) {
+        super(props);
+        const rtl = this.props.rtl;
+        this.state = {
+            arabic: !!rtl,
+            reportMeta: [
+                {value: new Date().getDate(), label: rtl ? 'التاريخ' : 'date', id: 'email', type: 'date'},
+                {value: '', label: rtl ? 'الاسم' : 'name', id: 'studentName', type: 'text'},
+                {value: '', label: rtl ? 'المعلم' : 'teacher', id: 'teacherName', type: 'text'},
+            ],
+            coursesReviews: [
+                {
+                    id: 1, controllers: [
+                        {
+                            value: rtl ? courses[0] : coursesen[0],
+                            label: rtl ? 'الدروس' : 'course',
+                            id: 'class',
+                            type: 'select',
+                            options: rtl ? courses : coursesen
+                        },
+                        {value: rtl ? grades[0] : gradesEN[0], label: rtl ? 'الدرجه' : 'degree', id: 'grade', type: 'select', options: rtl ? grades : gradesEN},
+                        {value: '', label: rtl ? 'تعليق' : 'comment', id: 'comment', type: 'text', multiline: true}]
+                }
+            ]
+        }
     }
 
 
@@ -35,6 +50,33 @@ class ReportCard extends React.Component {
             reportMeta: updatedMetaDta
         })
     };
+
+    componentDidUpdate() {
+        if (this.state.arabic === this.props.rtl) return;
+        const rtl = !!this.props.rtl;
+        this.setState({
+            arabic: !!rtl,
+            reportMeta: [
+                {value: new Date().getDate(), label: rtl ? 'التاريخ' : 'date', id: 'email', type: 'date'},
+                {value: '', label: rtl ? 'الاسم' : 'name', id: 'studentName', type: 'text'},
+                {value: '', label: rtl ? 'المعلم' : 'teacher', id: 'teacherName', type: 'text'},
+            ],
+            coursesReviews: [
+                {
+                    id: 1, controllers: [
+                        {
+                            value: rtl ? courses[0] : coursesen[0],
+                            label: rtl ? 'الدروس' : 'course',
+                            id: 'class',
+                            type: 'select',
+                            options: rtl ? courses : coursesen
+                        },
+                        {value: rtl ? grades[0] : gradesEN[0], label: rtl ? 'الدرجه' : 'degree', id: 'grade', type: 'select', options: rtl ? grades : gradesEN},
+                        {value: '', label: rtl ? 'تعليق' : 'comment', id: 'comment', type: 'text', multiline: true}]
+                }
+            ]
+        })
+    }
 
     // handler of reviews
     coursesReviewsHandler = ({target: {value}}, id, key) => {
@@ -54,11 +96,18 @@ class ReportCard extends React.Component {
     addMoveReviews = () => {
         const reviewsCount = this.state.coursesReviews;
         // adding new review
+        const rtl = this.props.rtl
         const newReview = {
             id: reviewsCount + new Date().getTime(), controllers: [
-                {value: 'course1', label: 'course', id: 'course', type: 'select', options: courses},
-                {value: 'grade1', label: 'grade', id: 'grade', type: 'select', options: grades},
-                {value: '', label: 'comment', id: 'teacherName', type: 'text', multiline: true}]
+                {
+                    value: rtl ? courses[0] : coursesen[0],
+                    label: rtl ? 'الدروس' : 'course',
+                    id: 'class',
+                    type: 'select',
+                    options: rtl ? courses : coursesen
+                },
+                {value: rtl ? grades[0] : gradesEN[0], label: rtl ? 'الدرجه' : 'degree', id: 'grade', type: 'select', options: rtl ? grades : gradesEN},
+                {value: '', label: rtl ? 'تعليق' : 'comment', id: 'comment', type: 'text', multiline: true}]
         }
         this.setState(prevState => ({coursesReviews: prevState.coursesReviews.concat(newReview)}));
     }
@@ -107,14 +156,14 @@ class ReportCard extends React.Component {
                             </Grid>
                         </div>
                         <div className="reportBody">
-                            {coursesReviews.map(({id, controllers}) => <CourseReview key={id}
+                            {coursesReviews.map(({id, controllers}) => <CourseReview rtl={this.props.rtl} key={id}
                                                                                      remove={removeReview}
                                                                                      changeHandler={coursesReviewsHandler} review={controllers}
                                                                                      ide={id}/>)}
                         </div>
                         <div className="formAction">
                             <Button type="submit" variant="extendedFab" color="primary" className="submitFab">
-                                save
+                                {this.props.rtl ? "حفظ" : 'save'}
                             </Button>
                         </div>
                     </form>

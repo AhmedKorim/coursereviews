@@ -33,7 +33,7 @@ const CourseReview = props => {
                             </Grid>
                             <Grid xs item container justify="center" alignItems="center">
                                 <Grid>
-                                    <Tooltip title="remove course review">
+                                    <Tooltip title={props.rtl ? "حذف هذف التعليق" : 'delete this comment'}>
                                         <Button variant="fab" color="secondary" className="newReviewFap" onClick={_ => remove(ide)}><Icon>delete</Icon></Button>
                                     </Tooltip>
                                 </Grid>
